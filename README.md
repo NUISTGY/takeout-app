@@ -1,4 +1,4 @@
-# takeout-app-version 1.0 with Redis support
+# Takeout-app-version 1.0 with Redis support
 
 ```yml
 server:
