@@ -137,7 +137,7 @@ public class DishController {
     @GetMapping("/list")
     public R<List<DishDto>> list(Dish dish){
         List<DishDto> dishDtoList = null;
-        String key = "dish_" + dish.getCategoryId() + "_" +dish.getStatus();
+        String key = "dish_" + dish.getCategoryId() + "_" + dish.getStatus();
         //从redis中获取数据缓存
         dishDtoList =(List<DishDto>) redisTemplate.opsForValue().get(key);
         if (dishDtoList != null)
