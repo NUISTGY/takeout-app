@@ -86,7 +86,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
         return new ApiInfoBuilder()
                 .title("Takeout-App")
                 .version("1.1")
-                .description("外卖接口文档")
+                .description("外卖项目接口文档")
                 .build();
     }
 }
